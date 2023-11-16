@@ -1,3 +1,4 @@
+# phase 1 start ----------------
 index.html
 createNew.html
 customTarget.html
@@ -7,3 +8,17 @@ validate.html
 media.html
 surveyHistory.html
 surveySetting.html
+
+# phase 2 start --------------
+age.html
+customAnswer.html
+gender.html
+customQuotas.html
+netRapQuotas.html
+createAudience.html
+editAudience.html
+live.html
+audienceQuestion.html
+designerOverview.html
+questionType.html
+designerDetails.html

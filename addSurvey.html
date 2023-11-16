@@ -1,0 +1,568 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Make Opinion</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="shortcut icon" type="image/x-icon" href="#">
+        <!-- Place favicon.ico in the root directory -->
+        
+		<!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/all.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css"> 
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+    <body>
+
+        <div class="addSurvey_html_file">
+            <!-- default nav header  -->
+            <div class="container">
+                <div class="Common_header_area">
+                    <div class="Common_header_wrapper">
+                        <a href="#">
+                            Add Survey Question
+                        </a>
+                        <span class="nav__line"></span>
+                        <span class="survey_tooltip survey_tooltip--x">
+                            <i class="fa-solid fa-x"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- main part  -->
+            <div class="container">
+                <!-- main header part  -->
+                <h5 class="topic_title">Question Title & Description:</h5>
+
+                <div class="header_input_area">
+                    <div class="createQuestion_header_text">
+                        <div class="ai_area_blk">
+                            <input class="createQuestion_text" placeholder="What is your favorite color?" type="text" >
+
+                            <div class="ai_blk">
+                                <span class="ai_text">AI</span>
+
+                                <div class="hover_ai_text">
+                                    <h5>Suggest with AI</h5>
+                                    <span>
+                                        Use this feature to generate question content and design by using AI.
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+    
+                        <input type="text" placeholder="Please select one option." class="soo_text" />
+                    </div>
+
+                    <div>
+                        <div class="survey_question_header_asterick">
+                            <span class="survey_tooltip survey_tooltip--asteric">
+                                <i class="fa-solid fa-asterisk"></i>
+                            </span>
+
+                            <p class="showOnHover">This question is <span>mandatory</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- choise area start  -->
+                <div class="chosie_area_wrapper">
+                    <div class="chosie_area_left_wrapper">
+                        <h5 class="topic_title">Question Type:</h5>
+                        <div class="choise_select">
+                            <span>Single Choice</span>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                    <div class="choise_area_right_wrapper">
+                        <div class="choise_input_area">
+                            <h5 class="topic_title">Question ID:</h5>
+                            <input type="text" >
+                        </div>
+                        
+                        <div>
+                            <span class="survey_tooltip survey_tooltip--help">
+                                <i class="fa-solid fa-circle-question"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- nav bar  -->
+                <div class="createQuestion_nav m_16">
+                    <ul>
+                        <li>
+                            <a href="#" class="active">Answers</a>
+                        </li>
+                        <li>
+                            <a href="#">Settings</a>
+                        </li>
+                        <li>
+                            <a href="#">Logics</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <span class="survey_tooltip survey_tooltip--Dots" id="survey_tooltip--Dots">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="module_list_wrapper">
+                    <!-- single list  -->
+                    <div class="answer_module_list">
+                        <div class="answer_module_input_blk">
+                            <input type="text" placeholder="Blue"/>
+                        </div>
+                        <div class="">
+                            <div class="survey_tooltip_blk">
+                                <div class="survey_Dots_event">
+                                    <span class="survey_tooltip survey_tooltip--Dots" id="survey_tooltip--Dots">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+    
+                                    <ul id="survey_tooltip--dropdown" style="display: none;">
+                                        <li>
+                                            <!-- edit question click event  -->
+                                            <a href="#" class="open_edit_question_offcanvas">
+                                                <span>
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </span>
+                                                <span class="link_text">rename</span>
+                                            </a>
+                                            
+                                            <div class="edit_question_offcanvas">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident totam, asperiores possimus voluptatibus quidem nam nemo modi in fuga et.
+
+                                                <a href="#0" class="close_edit_question_overlay">close</a>
+                                            </div>
+                                            <div class="edit_question_offcanvas_overlay"></div>
+                                        </li>
+    
+                                        <li>
+                                            <a href="#">
+                                                <span>
+                                                    <i class="fa-solid fa-copy"></i>
+                                                </span>
+                                                <span class="link_text">Duplicate</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span>
+                                                    <i class="fa-solid fa-arrows-split-up-and-left"></i>
+                                                </span>
+                                                <span class="link_text">Add Logic</span>
+                                            </a>
+                                        </li>
+    
+                                        <li>
+                                            <a href="#">
+                                                <span>
+                                                    <i class="fa-solid fa-trash-can" style="color: #d92653;"></i>
+                                                </span>
+                                                <span class="link_text">Delete</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="survey_tooltip survey_tooltip--grip">
+                                    <i class="fa-solid fa-grip-vertical"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single list  -->
+                    <div class="answer_module_list">
+                        <div class="answer_module_input_blk">
+                            <input type="text" placeholder="Red"/>
+                        </div>
+                        <div class="">
+                            <div class="survey_tooltip_blk">
+                                <div class="survey_Dots_event">
+                                    <span class="survey_tooltip survey_tooltip--Dots" id="survey_tooltip--Dots">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+    
+                                    <ul id="survey_tooltip--dropdown" style="display: none;">
+                                        <li>
+                                            <!-- edit question click event  -->
+                                            <a href="#" class="open_edit_question_offcanvas">
+                                                <span>
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </span>
+                                                <span class="link_text">rename</span>
+                                            </a>
+                                            
+                                            <div class="edit_question_offcanvas">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident totam, asperiores possimus voluptatibus quidem nam nemo modi in fuga et.
+
+                                                <a href="#0" class="close_edit_question_overlay">close</a>
+                                            </div>
+                                            <div class="edit_question_offcanvas_overlay"></div>
+                                        </li>
+    
+                                        <li>
+                                            <a href="#">
+                                                <span>
+                                                    <i class="fa-solid fa-copy"></i>
+                                                </span>
+                                                <span class="link_text">Duplicate</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span>
+                                                    <i class="fa-solid fa-arrows-split-up-and-left"></i>
+                                                </span>
+                                                <span class="link_text">Add Logic</span>
+                                            </a>
+                                        </li>
+    
+                                        <li>
+                                            <a href="#">
+                                                <span>
+                                                    <i class="fa-solid fa-trash-can" style="color: #d92653;"></i>
+                                                </span>
+                                                <span class="link_text">Delete</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="survey_tooltip survey_tooltip--grip">
+                                    <i class="fa-solid fa-grip-vertical"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single list  -->
+                    <div class="answer_module_list">
+                        <div class="answer_module_input_blk">
+                            <input type="text" placeholder="Yellow"/>
+                        </div>
+                        <div class="">
+                            <div class="survey_tooltip_blk">
+                                <div class="survey_Dots_event">
+                                    <span class="survey_tooltip survey_tooltip--Dots" id="survey_tooltip--Dots">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+    
+                                    <ul id="survey_tooltip--dropdown" style="display: none;">
+                                        <li>
+                                            <!-- edit question click event  -->
+                                            <a href="#" class="open_edit_question_offcanvas">
+                                                <span>
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </span>
+                                                <span class="link_text">rename</span>
+                                            </a>
+                                            
+                                            <div class="edit_question_offcanvas">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident totam, asperiores possimus voluptatibus quidem nam nemo modi in fuga et.
+
+                                                <a href="#0" class="close_edit_question_overlay">close</a>
+                                            </div>
+                                            <div class="edit_question_offcanvas_overlay"></div>
+                                        </li>
+    
+                                        <li>
+                                            <a href="#">
+                                                <span>
+                                                    <i class="fa-solid fa-copy"></i>
+                                                </span>
+                                                <span class="link_text">Duplicate</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span>
+                                                    <i class="fa-solid fa-arrows-split-up-and-left"></i>
+                                                </span>
+                                                <span class="link_text">Add Logic</span>
+                                            </a>
+                                        </li>
+    
+                                        <li>
+                                            <a href="#">
+                                                <span>
+                                                    <i class="fa-solid fa-trash-can" style="color: #d92653;"></i>
+                                                </span>
+                                                <span class="link_text">Delete</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="survey_tooltip survey_tooltip--grip">
+                                    <i class="fa-solid fa-grip-vertical"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single list  -->
+                    <div class="answer_module_list">
+                        <div class="answer_module_input_blk">
+                            <input type="text" placeholder="Blue"/>
+                        </div>
+                        <div class="">
+                            <div class="survey_tooltip_blk">
+                                <div class="survey_Dots_event">
+                                    <span class="survey_tooltip survey_tooltip--Dots" id="survey_tooltip--Dots">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+    
+                                    <ul id="survey_tooltip--dropdown" style="display: none;">
+                                        <li>
+                                            <!-- edit question click event  -->
+                                            <a href="#" class="open_edit_question_offcanvas">
+                                                <span>
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </span>
+                                                <span class="link_text">rename</span>
+                                            </a>
+                                            
+                                            <div class="edit_question_offcanvas">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident totam, asperiores possimus voluptatibus quidem nam nemo modi in fuga et.
+
+                                                <a href="#0" class="close_edit_question_overlay">close</a>
+                                            </div>
+                                            <div class="edit_question_offcanvas_overlay"></div>
+                                        </li>
+    
+                                        <li>
+                                            <a href="#">
+                                                <span>
+                                                    <i class="fa-solid fa-copy"></i>
+                                                </span>
+                                                <span class="link_text">Duplicate</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span>
+                                                    <i class="fa-solid fa-arrows-split-up-and-left"></i>
+                                                </span>
+                                                <span class="link_text">Add Logic</span>
+                                            </a>
+                                        </li>
+    
+                                        <li>
+                                            <a href="#">
+                                                <span>
+                                                    <i class="fa-solid fa-trash-can" style="color: #d92653;"></i>
+                                                </span>
+                                                <span class="link_text">Delete</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="survey_tooltip survey_tooltip--grip">
+                                    <i class="fa-solid fa-grip-vertical"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single list  -->
+                    <div class="answer_module_list">
+                        <div class="answer_module_input_blk">
+                            <input type="text" placeholder="Red"/>
+                        </div>
+                        <div class="">
+                            <div class="survey_tooltip_blk">
+                                <div class="survey_Dots_event">
+                                    <span class="survey_tooltip survey_tooltip--Dots" id="survey_tooltip--Dots">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+    
+                                    <ul id="survey_tooltip--dropdown" style="display: none;">
+                                        <li>
+                                            <!-- edit question click event  -->
+                                            <a href="#" class="open_edit_question_offcanvas">
+                                                <span>
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </span>
+                                                <span class="link_text">rename</span>
+                                            </a>
+                                            
+                                            <div class="edit_question_offcanvas">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident totam, asperiores possimus voluptatibus quidem nam nemo modi in fuga et.
+
+                                                <a href="#0" class="close_edit_question_overlay">close</a>
+                                            </div>
+                                            <div class="edit_question_offcanvas_overlay"></div>
+                                        </li>
+    
+                                        <li>
+                                            <a href="#">
+                                                <span>
+                                                    <i class="fa-solid fa-copy"></i>
+                                                </span>
+                                                <span class="link_text">Duplicate</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span>
+                                                    <i class="fa-solid fa-arrows-split-up-and-left"></i>
+                                                </span>
+                                                <span class="link_text">Add Logic</span>
+                                            </a>
+                                        </li>
+    
+                                        <li>
+                                            <a href="#">
+                                                <span>
+                                                    <i class="fa-solid fa-trash-can" style="color: #d92653;"></i>
+                                                </span>
+                                                <span class="link_text">Delete</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="survey_tooltip survey_tooltip--grip">
+                                    <i class="fa-solid fa-grip-vertical"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single list  -->
+                    <div class="answer_module_list">
+                        <div class="answer_module_input_blk">
+                            <input type="text" placeholder="Yellow"/>
+                        </div>
+                        <div class="">
+                            <div class="survey_tooltip_blk">
+                                <div class="survey_Dots_event">
+                                    <span class="survey_tooltip survey_tooltip--Dots" id="survey_tooltip--Dots">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+    
+                                    <ul id="survey_tooltip--dropdown" style="display: none;">
+                                        <li>
+                                            <!-- edit question click event  -->
+                                            <a href="#" class="open_edit_question_offcanvas">
+                                                <span>
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </span>
+                                                <span class="link_text">rename</span>
+                                            </a>
+                                            
+                                            <div class="edit_question_offcanvas">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident totam, asperiores possimus voluptatibus quidem nam nemo modi in fuga et.
+
+                                                <a href="#0" class="close_edit_question_overlay">close</a>
+                                            </div>
+                                            <div class="edit_question_offcanvas_overlay"></div>
+                                        </li>
+    
+                                        <li>
+                                            <a href="#">
+                                                <span>
+                                                    <i class="fa-solid fa-copy"></i>
+                                                </span>
+                                                <span class="link_text">Duplicate</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span>
+                                                    <i class="fa-solid fa-arrows-split-up-and-left"></i>
+                                                </span>
+                                                <span class="link_text">Add Logic</span>
+                                            </a>
+                                        </li>
+    
+                                        <li>
+                                            <a href="#">
+                                                <span>
+                                                    <i class="fa-solid fa-trash-can" style="color: #d92653;"></i>
+                                                </span>
+                                                <span class="link_text">Delete</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="survey_tooltip survey_tooltip--grip">
+                                    <i class="fa-solid fa-grip-vertical"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- add answer button area  -->
+                    <div class="add_answer">
+                        <div class="add_import_btn_area">
+                            <a href="#" class="primary_btn">
+                                <span><i class="fa-solid fa-circle-plus"></i></span>
+                                Add Answer
+                            </a>
+                            <a href="#" class="primary_btn">
+                                <span><i class="fa-solid fa-file-import"></i></span>
+                                Import Answers
+                            </a>
+                        </div>
+                        <div class="">
+                            <div class="toggle_area">
+                                <label class="toggle-control">
+                                <input type="checkbox"/>
+                                <span class="control"></span>
+                                </label>
+                                <p>Selection Mapping OFF</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                
+            </div>
+
+            <!-- bottom part  -->
+            <div class="bbbb_fixed">
+                <div class="container">
+                    <div class="bottom_part_of_the_body">
+                        <div class="bottom_left_part_of_the_body">
+                            <button class="primary_btn btn_default">
+                                Add Question to Survey
+                            </button>
+                            <button class="primary_btn cancel_btn">
+                                Cancel
+                            </button>
+                        </div>
+                        <div class="bottom_right_part_of_the_body">
+                            <button type="button" class="primary_btn reset_btn">
+                                Reset Question
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+		<!-- JS here --> 
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script> 
+        <script src="assets/js/script.js"></script>
+
+
+    </body>
+</html>
